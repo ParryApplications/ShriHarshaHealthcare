@@ -29,16 +29,19 @@ const SUBJECT = "Regarding ShriHarsha Healthcare Connect";
 const HOST = "smtp.elasticemail.com";
 const PASSWORD = "88FD3DA5E7D6ABAAC4EA00E140FDAE468513";
 
-3
 // console.log(navScrollPadding);
 
 document.documentElement.style.setProperty("--scroll-padding", navScrollPadding - 1 + "px");
 
-// Hide the elements on page load
-successFormAlert.classList.add('d-none');
-successFormAlert.classList.add('hidden');
-formProgressBar.classList.add('d-none');
-formProgressBar.classList.add('hidden');
+// Hide the elements on page load (only if they exist)
+if (successFormAlert) {
+    successFormAlert.classList.add('d-none');
+    successFormAlert.classList.add('hidden');
+}
+if (formProgressBar) {
+    formProgressBar.classList.add('d-none');
+    formProgressBar.classList.add('hidden');
+}
 
 //Form Validation:
 var forms = document.getElementsByClassName('needs-validation');
@@ -51,13 +54,15 @@ Array.prototype.forEach.call(forms, function (form) {
             form.classList.add('was-validated');
         } else {
             form.classList.remove('was-validated');
-            formProgressBar.classList.remove("d-none");
-            // formProgressBar.classList.remove("d-md-block");
-            formProgressBar.classList.remove("hidden");
+            if (formProgressBar) {
+                formProgressBar.classList.remove("d-none");
+                formProgressBar.classList.remove("hidden");
+            }
 
-            successFormAlert.classList.add("d-none");
-            // successFormAlert.classList.add("d-md-block");
-            successFormAlert.classList.add("hidden");
+            if (successFormAlert) {
+                successFormAlert.classList.add("d-none");
+                successFormAlert.classList.add("hidden");
+            }
             sendEmail(form);
         }
     });
@@ -110,23 +115,37 @@ function sendEmail(form) {
     }).then(function (message) {
         if (message === "OK") {
             // Show success alert if form is valid and submit it (generate email)
-            formProgressBar.classList.add("d-none");
-            // formProgressBar.classList.add("d-md-block");
-            formProgressBar.classList.add("hidden");
+            if (formProgressBar) {
+                formProgressBar.classList.add("d-none");
+                formProgressBar.classList.add("hidden");
+            }
 
-            successFormAlert.classList.remove("d-none");
-            // successFormAlert.classList.remove("d-md-block");
-            successFormAlert.classList.remove("hidden");
-            // alert("Form Submitted Successfully, Will Reach you within 24 hours");
+            if (successFormAlert) {
+                successFormAlert.classList.remove("d-none");
+                successFormAlert.classList.remove("hidden");
+            }
+            
+            // Scroll to success message
+            if (successFormAlert) {
+                successFormAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
         } else {
             // Show error message
+            if (formProgressBar) {
+                formProgressBar.classList.add("d-none");
+                formProgressBar.classList.add("hidden");
+            }
             console.error(message);
-            alert(message);
+            alert("Error: " + message + "\n\nPlease contact us via WhatsApp instead.");
         }
     }).catch(function (error) {
         // Show error message
+        if (formProgressBar) {
+            formProgressBar.classList.add("d-none");
+            formProgressBar.classList.add("hidden");
+        }
         console.error(error);
-        alert("An error occurred while sending the email.");
+        alert("An error occurred while sending the email.\n\nPlease contact us via WhatsApp: +91-9310338684");
     });
 }
 

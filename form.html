@@ -6,12 +6,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Form</title>
-    <meta name=”robots” content="noindex, follow">
+    
+    <!-- SEO META TAGS -->
+    <title>Book Consultation - Shriharsha Healthcare</title>
+    <meta name="description" content="Book your consultation with expert dietitians, doctors, and laboratory services at Shriharsha Healthcare. Fill out the form to get started on your health journey.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="src/app-logo.jpg" type="image/x-icon">
+    
+    <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="src/app-logo.jpg" type="image/x-icon">
-    <link src="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,64 +52,71 @@
                         <a class="nav-link" href="/index.html#about-section">About</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Contact Us
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span style="padding-left: 5px; color: darkgreen;font-weight: bold;">&#9990</span>
-                                    <a class="dropdown-item"
-                                        href="https://api.whatsapp.com/send?phone=919310338684">+91-9310338684</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span style="padding-left: 5px; color: darkgreen;font-weight: bold;">&#9990</span>
-                                    <a class="dropdown-item"
-                                        href="https://api.whatsapp.com/send?phone=919870154269">+91-9870154269</a>
-                                </div>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!--FORM-->
-    <div class="container my-4">
-        <div class="py-5 text-center">
-            <!-- <img class="d-block mx-auto mb-4 rounded-circle" src="/src/app-logo.jpg" alt="" width="72" height="57"> -->
-            <h2>Get in Touch</h2>
-            <p class="lead">Ready to take charge of your health and wellness? Dive into our simple yet comprehensive
-                form and pave the way for a journey towards optimal well-being. By providing us with a few key details,
-                you'll unlock a treasure trove of personalized recommendations tailored just for you. From dietary
-                preferences to lifestyle goals, our dedicated team is here to empower you on your path to vitality and
-                balance. Don't wait any longer – seize the opportunity to invest in your health today and embark on a
-                transformative adventure towards a brighter, healthier tomorrow!</p>
-            <div class="container">
-                <img src="src/qrCode.png" focusable="false" class="img-fluid mx-auto d-block" width="140px">
-            </div>
+    <!--GET IN TOUCH-->
+    <div class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-3 fw-bold">Get in Touch</h1>
+            <p class="lead text-muted">Ready to take charge of your health and wellness? Contact us today!</p>
         </div>
-    </div>
 
-                        
-                        <div class="d-flex flex-column justify-content-center align-items-center my-3">
-                            <span style="font-size: 12px; color: gray;" class="text-center">
-                                We sincerely apologize for the inconvenience. Due to ongoing maintenance, form submissions are temporarily unavailable. Meanwhile, please share your details via WhatsApp below or contact us for assistance.
-                            </span>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span style="padding-left: 5px; color: darkgreen;font-weight: bold;">&#9990</span>
-                                    <a class="dropdown-item"
-                                    href="https://api.whatsapp.com/send?phone=919310338684">+91-9310338684</a>
-                            </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <!-- Combined Card -->
+                <div class="card shadow-lg border-0">
+                    <div class="card-body text-center p-5">
+                        <!-- Payment QR Code Section -->
+                        <div class="mb-5">
+                            <h3 class="fw-bold mb-4">
+                                <i class="fas fa-qrcode text-primary me-2"></i>Payment QR Code
+                            </h3>
+                            <img src="src/qrCode.png" alt="Payment QR Code" class="img-fluid rounded mb-3"
+                                 style="max-width: 280px; border: 4px solid #e9ecef; padding: 15px; background: white;">
+                            <p class="text-muted mb-0">Scan to make payment after consultation</p>
                         </div>
 
-                    <!-- <button id="form-submit-button" type="submit" class="w-100 btn btn-primary btn-lg ">Submit</button> -->
-                
+                        <hr class="my-5">
+
+                        <!-- Need Help Section -->
+                        <div>
+                            <h3 class="fw-bold mb-3 text-success">
+                                <i class="fas fa-headset me-2"></i>Need Help?
+                            </h3>
+                            <p class="text-muted mb-4 fs-5">Contact us directly via WhatsApp for instant support and booking</p>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <a href="https://api.whatsapp.com/send?phone=919310338684&text=Hi, I need help with booking a consultation"
+                                       class="btn btn-outline-success btn-lg w-100 py-3" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp me-2 fs-4"></i>
+                                        <div class="d-block">
+                                            <small class="d-block">Chat Now</small>
+                                            <strong>+91-9310338684</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="https://api.whatsapp.com/send?phone=919870154269&text=Hi, I need help with booking a consultation"
+                                       class="btn btn-outline-success btn-lg w-100 py-3" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-whatsapp me-2 fs-4"></i>
+                                        <div class="d-block">
+                                            <small class="d-block">Chat Now</small>
+                                            <strong>+91-9870154269</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--QR MODAL (POP-UP)-->
@@ -124,65 +141,104 @@
         </div>
     </div> -->
 
-    <hr class="my-4 featurette-divider mx-5">
+    <hr class="my-5 featurette-divider mx-5">
 
     <!--FOOTER-->
     <footer>
-        <div class="bg-green-100">
-            <p class="text-center pt-3 mb-0 lin" id="ln"><a href="https://www.linkedin.com/in/paras-bhatt-4911a8181/"
-                    style="text-decoration:none;" class="linkedin"><i class="fab fa-linkedin-in text-gray-600"
-                        style="font-size:20px;"></i></a>
-            </p>
+        <div class="container">
+            <div class="row py-5">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Shriharsha Healthcare</h5>
+                    <p class="text-light">Your trusted partner in health and wellness. We provide personalized nutrition plans, expert medical consultation, and comprehensive laboratory services.</p>
+                    <div class="mt-3">
+                        <a href="https://www.instagram.com/shriharshahealthcare?utm_source=qr&igsh=MWdwNGtncjlkZnptbw=="
+                           class="text-light me-3" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram" style="font-size: 24px;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/paras-bhatt-4911a8181/"
+                           class="text-light me-3" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" style="font-size: 24px;"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=919310338684"
+                           class="text-light" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="container mx-auto  px-5 text-center">
-                <p class="text-gray-500 text-sm text-center sm:text-left"
-                    style="font-family: 'Merriweather', serif; font-weight:bolder; color: gray; font-size: 13px;">
-                    Copyright
-                    Since &copy;
-                    2024, <a style="text-decoration:none; color: gray; font-weight: bolder;color:gray">ShriHarsha
-                        Healthcare
-                    </a>
-                    <a href="https://www.instagram.com/shriharshahealthcare?utm_source=qr&igsh=MWdwNGtncjlkZnptbw=="
-                        style="text-decoration:none" rel="noopener noreferrer" class="text-gray-600 ml-1"
-                        target="_blank" style="font-family: 'Merriweather', serif;">@Instagram</a>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/index.html" class="text-light">Home</a></li>
+                        <li class="mb-2"><a href="/index.html#services-section" class="text-light">Services</a></li>
+                        <li class="mb-2"><a href="/index.html#about-section" class="text-light">About Us</a></li>
+                        <li class="mb-2"><a href="/form.html" class="text-light">Book Consultation</a></li>
+                        <li class="mb-2"><a href="/blogs.html" class="text-light">Health Blog</a></li>
+                    </ul>
+                </div>
 
-                    <br> <B style="color: gray;">ALL RIGHTS RESERVED </B>| <a class="privacy"
-                        href="https://www.termsfeed.com/live/be302051-0e38-46b8-aba8-c3dd549310eb">PRIVACY POLICY</a>
-                </p>
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/form.html" class="text-light">Dietitian Consultation</a></li>
+                        <li class="mb-2"><a href="/form.html" class="text-light">Doctor Consultation</a></li>
+                        <li class="mb-2"><a href="/form.html" class="text-light">Laboratory Testing</a></li>
+                        <li class="mb-2"><a href="/form.html" class="text-light">Weight Management</a></li>
+                        <li class="mb-2"><a href="/form.html" class="text-light">Nutrition Planning</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+919310338684" class="text-light">+91-9310338684</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+919870154269" class="text-light">+91-9870154269</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:shriharshahealthcare@gmail.com" class="text-light">shriharshahealthcare@gmail.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-globe me-2"></i>
+                            <a href="https://shriharshahealthcare.com" class="text-light">shriharshahealthcare.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-top border-secondary pt-4 pb-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0 text-light small">
+                            &copy; 2024 <strong>Shriharsha Healthcare Private Limited</strong>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <a href="https://www.termsfeed.com/live/be302051-0e38-46b8-aba8-c3dd549310eb"
+                           class="privacy text-light small me-3" target="_blank" rel="noopener noreferrer">
+                            Privacy Policy
+                        </a>
+                        <a href="#" class="text-light small">Terms of Service</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
-    <!--Form Validation-->
-    <script>
-        // Function to check if all mandatory fields are filled
-        function checkMandatoryFields() {
-            // Get all mandatory fields
-            const mandatoryFields = document.querySelectorAll('[required]');
-
-            // Check if all mandatory fields are filled
-            const allFilled = Array.from(mandatoryFields).every(field => field.value.trim() !== '');
-
-            // Enable or disable the submit button based on the result
-            const submitButton = document.getElementById('form-submit-button');
-            submitButton.disabled = !allFilled;
-        }
-
-        // Add event listeners to all form fields to check for changes
-        const formFields = document.querySelectorAll('input, select, textarea');
-        formFields.forEach(field => {
-            field.addEventListener('input', checkMandatoryFields);
-        });
-
-        // Initially check if all mandatory fields are filled when the page loads
-        checkMandatoryFields();
-    </script>
 
 </body>
 
