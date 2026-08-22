@@ -37,7 +37,7 @@
 
 ### 5. **Phone Numbers Standardized** ✓
 - **Issue:** Inconsistent numbers across pages
-- **Solution:** Standardized to +91-9310338684 and +91-9870154269
+- **Solution:** Standardized to +91-9310338684 and +91-9971946876
 - **Status:** ✅ CONSISTENT
 
 ---
@@ -421,7 +421,7 @@ The website is now **100% ready for production deployment**. All files are prope
 
 For any questions or issues:
 - **Email:** info@shriharshahealthcare.com
-- **Phone:** +91-9310338684 / +91-9870154269
+- **Phone:** +91-9310338684 / +91-9971946876
 - **Website:** https://shriharshahealthcare.com
 
 ---
